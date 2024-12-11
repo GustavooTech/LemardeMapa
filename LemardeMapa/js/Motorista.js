@@ -9,9 +9,13 @@ class Motorista{
         this.cpf = cpf;
         this.cnh = cnh;
         this.idiomas = idiomas;
-        this.listaMotorista= []
         this.nacionalidade = nacionalidade;;
         this.descricao = descricao;
+        this.dispGuia = false;
+        this.arCondicionado = false;
+        this.categUsuario = 'motorista';
+        this.carro
+        this.listaMotorista= []
     }
 
     cadastrarMotorista(motorista){
@@ -23,8 +27,11 @@ class Motorista{
     };
 
     cadastrarCarro(idUsuario, categUsuario, nome, modelo, ano, cor, placa){
+        const id = this.gerarId();
+        categUsuario = this.categUsuario;
+
         const carro = new Carro(idUsuario, categUsuario, nome, modelo, ano, cor, placa);
-        this.listaMotorista.push(carro)
+        this.carro = carro
     }
 
     addIdioma(idioma){

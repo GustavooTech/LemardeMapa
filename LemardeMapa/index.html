@@ -48,6 +48,8 @@
                             <ion-icon name="man"></ion-icon>
                             <button type="submit"></button>
                         </div>
+                        <select name="barrapesquisa-select" id="barrapesquisa-select" class="barrapesquisa-select">
+                        </select>
                     </form><!-- #pesq-area -->
 
                     <ul id="pesq-area-categorias">
@@ -108,12 +110,12 @@
             <div class="div2" id="navLateraPesquisa-btn"><ion-icon name="caret-forward-outline"></ion-icon></div>
 
             <div class="div1">
-                <section class="mostrar-motoristas">
+                <section class="mostrar-motoristas" id="mostrar-motoristas-id">
                     <h3>Motoristas</h3>
 
                     <div class="mostrar-motorista item">
                         <div class="info-motorista info">
-                            <ion-icon class="foto-perfil" name="bookmark-outline"></ion-icon>
+                            <img src="assets/css/bg.jpg" alt="" class="foto-perfil">
                             <div>
                                 <h4>Nome Completo mostrar-motorista</h4>
                                 <p>Carro Modelo, ano 0000, cor</p>
@@ -167,19 +169,16 @@
                 </div> <!-- .info-adicional -->
                 <a href="#">Mais Informações</a>
             </div> <!-- .mostrar-motorista -->
-
-            <div class="item item-endereco">
-                <p>Al, Alameda Cel. Elizio Pereira, 1191 - Estradinha, Paranaguá - PR, 83203-000</p>
-            </div>
+            <section id="navInferior-enderecos"></section>
         </section>
     </div> <!-- #app -->
 
-    <div id="tela-inicio">
+    <!--    <div id="tela-inicio" class="oculto">
         <h1>Lemarde Mapa
             <ion-icon name="map-outline"></ion-icon>
         </h1>
     </div>
-
+ -->
 
     <!-- ======================= SCRIPTS ======================= -->
 
