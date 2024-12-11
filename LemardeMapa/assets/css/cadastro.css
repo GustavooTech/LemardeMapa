@@ -1,0 +1,125 @@
+:root{
+    --cor-verde: #97de5d;
+    --cor-azul: #4298f1;
+    --cor-azul-claro: #d8edf7;
+    --cor-branco-100: #fff;
+    --cor-branco-200: #f7f7f7;
+    --cor-preto-1000: #000;
+    --cor-preto-800: #1b1b1b;
+    --border-radius-padrao: 10px;
+    --box-shadow-padrao: #00000057;
+    --tmp-transicao: .4s;
+    font-size: 62.5%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    background-color: var(--cor-branco-200);
+}
+
+#app{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    width: 100%;
+    padding: 5% 10%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--cor-branco-200);
+}
+
+#opcoesCadastro{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px 10px;
+    flex-wrap: wrap;
+}
+
+#opcoesCadastro select{
+    padding: 8px 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--cor-branco-100);
+    background-color: var(--cor-azul);
+    border: none;
+}
+
+#opcoesCadastro .possuiCarro-input{
+    display: flex;
+    gap: 10px;
+}
+
+main{
+    width: 90%;
+    height: 80%;
+    padding: 10% 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--cor-branco-100);
+    overflow-y: scroll;
+}
+
+main h2{
+    text-align: center;
+    color: var(--cor-azul);
+}
+
+main form{
+    border-radius: var(--border-radius-padrao);
+    box-shadow: 0 0 5px var(--box-shadow-padrao);
+
+}
+
+main form, main form fieldset{ 
+    padding: 10% 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main form .input-item{
+    display: flex;
+    flex-direction: column;
+}
+
+main form fieldset{
+    border: none;
+    padding-top: 20px;
+    margin-top: 10px;
+    border-top: 1px solid var(--box-shadow-padrao);
+}
+
+main button{
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--cor-branco-100);
+    text-shadow: 0 0 5px var(--box-shadow-padrao);
+    background-color: var(--cor-verde);
+    border: none;
+    transition: background-color var(--tmp-transicao);
+    transition: color var(--tmp-transicao);
+}
+
+
+main button:hover{
+    background-color: var(--cor-azul-claro);
+    color: var(--cor-preto-1000);
+    text-shadow: none;
+}

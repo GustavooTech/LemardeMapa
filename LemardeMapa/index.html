@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Lemarde Mapa</title>
+</head>
+
+<body>
+    <div id="app">
+        <div id="mapContainer"></div> <!-- #mapContainer -->
+
+        <main>
+            <header class="navbar">
+
+                <div id="login-navbar">
+                    <p id="login-usuario">Login</p>
+                    <form id="loginUsuario-form">
+                        <label for="loginUsuario-nome">Nome:</label>
+                        <input type="text" name="loginUsuario-nome" id="loginUsuario-nome">
+                        <label for="loginUsuario-senha">Senha:</label>
+                        <input type="password" name="" id="">
+
+                        <aside>
+                            <p>Cadastrar como:</p>
+                            <a href="cadastrarGuia.html" target="_blank">Guia Turístico</a>
+                            <a href="cadastrarMotorista.html" target="_blank">Motorista</a>
+                        </aside>
+                    </form>
+                </div>
+
+                <div id="language-select-area">
+                    <select id="language-select">
+                        <option value="pt">Português</option>
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="po">Polonês</option>
+                        <option value="it">Italiano</option>
+                    </select> <!-- #language-select -->
+                </div> <!-- #language-select-area -->
+
+                <nav>
+                    <form id="pesq-area">
+                        <div>
+                            <input id="barrapesquisa" type="text" placeholder="Pesquisar">
+                            <ion-icon name="man"></ion-icon>
+                            <button type="submit"></button>
+                        </div>
+                    </form><!-- #pesq-area -->
+
+                    <ul id="pesq-area-categorias">
+                        <li>
+                            <ion-icon name="cafe"></ion-icon>
+                            <p id="filtrocafe">Cafés</p>
+                        </li>
+                        <li>
+                            <ion-icon name="cart"></ion-icon>
+                            <p id="filtromercado">Mercado</p>
+                        </li>
+                        <li>
+                            <ion-icon name="airplane"></ion-icon>
+                            <p id="filtroturismo">Turismo</p>
+                        </li>
+                        <li>
+                            <ion-icon name="business"></ion-icon>
+                            <p id="filtrofarmacia">Farmácia</p>
+                        </li>
+                    </ul> <!-- #pesq-area-categorias -->
+                </nav>
+            </header>
+        </main>
+
+        <section id="navLateral-usuario">
+            <div class="div1">
+                <div class="info-usuario">
+                    <img src="" alt="" class="foto-perfil">
+                    <div>
+                        <h3>Nome Usuário Completo</h3>
+                        <p>Idiomas</p>
+                    </div>
+                </div> <!-- .info-usuario -->
+
+                <section id="sec-salvos">
+                    <p><ion-icon name="filter-circle-outline"></ion-icon>Salvos
+                    </p>
+
+                    <div class="navLatreal-itens item">
+                        <div class="marcador">
+                            <ion-icon name="bookmark-outline"></ion-icon>
+                            <div>
+                                <h4 class="nome-marcador">Nome Marcador</h4>
+                                <p class="endereco">Al, Alameda Cel. Elizio Pereira, 1191 - Estradinha, Paranaguá - PR,
+                                    83203-000</p>
+                            </div>
+                        </div> <!-- .marcador-->
+                    </div> <!-- .navLatreal-itens -->
+                </section> <!-- #sec-salvos -->
+            </div> <!-- .div1 -->
+
+            <div class="div2" id="navLateralUsuario-btn"><ion-icon name="caret-forward-outline"></ion-icon></div>
+            <!-- .div2 -->
+
+        </section> <!-- #navLateral-usuario -->
+
+        <section id="navLateral-pesquisa">
+            <div class="div2" id="navLateraPesquisa-btn"><ion-icon name="caret-forward-outline"></ion-icon></div>
+
+            <div class="div1">
+                <section class="mostrar-motoristas">
+                    <h3>Motoristas</h3>
+
+                    <div class="mostrar-motorista item">
+                        <div class="info-motorista info">
+                            <ion-icon class="foto-perfil" name="bookmark-outline"></ion-icon>
+                            <div>
+                                <h4>Nome Completo mostrar-motorista</h4>
+                                <p>Carro Modelo, ano 0000, cor</p>
+                            </div>
+                        </div> <!-- .info-motorista -->
+                        <div class="info-adicional">
+                            <p class="arcondicionado">Ar-Condicionado</p>
+                            <p class="disp-guia">Disponível para guia</p>
+                        </div> <!-- .info-adicional -->
+                        <a href="#">Mais Informações</a>
+                    </div> <!-- .mostrar-motorista -->
+
+                </section> <!-- .mostrar-motoristas -->
+
+                <section class="mostrar-guias">
+                    <h3>Mostrar Guias</h3>
+                    <div class="mostrar-guia item">
+                        <div class="info-guia info">
+                            <ion-icon class="foto-perfil" name="bookmark-outline"></ion-icon>
+                            <div>
+                                <h4>Nome Completo Guia</h4>
+                                <p>Especialidades</p>
+                            </div>
+                        </div> <!-- .info-guia -->
+                        <div class="info-adicional">
+                            <p class="disp-motorista">Disponível para motorista</p>
+                        </div> <!-- .info-adicional -->
+                        <a href="#">Mais Informações</a>
+                    </div> <!-- .mostrar-guia -->
+                </section> <!-- .mostrar-guias -->
+            </div> <!-- .div1 -->
+
+        </section> <!-- #navLateral-pesquisa -->
+
+        <section id="nav-inferior">
+            <button id="navInferior-btn">
+                <ion-icon name="caret-up-outline"></ion-icon>
+            </button>
+
+            <div class="mostrar-motorista item">
+                <div class="info-motorista info">
+                    <ion-icon class="foto-perfil" name="bookmark-outline"></ion-icon>
+                    <div>
+                        <h4>Nome Completo mostrar-motorista</h4>
+                        <p>Carro Modelo, ano 0000, cor</p>
+                    </div>
+                </div> <!-- .info-motorista -->
+                <div class="info-adicional">
+                    <p class="arcondicionado">Ar-Condicionado</p>
+                    <p class="disp-guia">Disponível para guia</p>
+                </div> <!-- .info-adicional -->
+                <a href="#">Mais Informações</a>
+            </div> <!-- .mostrar-motorista -->
+
+            <div class="item item-endereco">
+                <p>Al, Alameda Cel. Elizio Pereira, 1191 - Estradinha, Paranaguá - PR, 83203-000</p>
+            </div>
+        </section>
+    </div> <!-- #app -->
+
+    <div id="tela-inicio">
+        <h1>Lemarde Mapa
+            <ion-icon name="map-outline"></ion-icon>
+        </h1>
+    </div>
+
+
+    <!-- ======================= SCRIPTS ======================= -->
+
+    <!-- Javascript -->
+    <script type="module" src="js/main.js"></script>
+    <!-- Javascript -->
+
+    <!-- Carregar ícones -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Carregar ícones -->
+
+    <!-- API para o Mapa - HERE Maps API -->
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+    <!-- API para o Mapa - HERE Maps API -->
+</body>
+
+</html>
