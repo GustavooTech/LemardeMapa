@@ -16,6 +16,8 @@ function rederizarMapa(){
     
 }
 
+rederizarMapa()
+
 function telaInicial(){
   const telaInicio = document.getElementById('tela-inicio')
   setTimeout(()=>{
@@ -68,7 +70,16 @@ telaInicial()
   })
 /* Botão Menu Inferior */
 
-rederizarMapa()
+/* Carregar Menu Lateral Usuário */
+  function carregarNavLateralUsuário(){
+    const navLateralUsuario = document.getElementById('navLateral-usuario');
+  }
+
+/* Carregar Menu Lateral Usuário */
+
+/* Carregar Menu Lateral Pesquisa */
+/* Carregar Menu Lateral Pesquisa */
+
 
 // Textos em diferentes idiomas
 const translations = {
