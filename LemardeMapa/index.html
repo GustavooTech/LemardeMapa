@@ -16,7 +16,7 @@
             <header class="navbar">
 
                 <div id="login-navbar">
-                    <p id="login-usuario">Login</p>
+                    <p id="loginusuario">Conecte-se</p>
                     <form id="loginUsuario-form">
                         <label for="loginUsuario-nome">Nome:</label>
                         <input type="text" name="loginUsuario-nome" id="loginUsuario-nome">
@@ -80,19 +80,19 @@
                     <img src="" alt="" class="foto-perfil">
                     <div>
                         <h3>Nome Usuário Completo</h3>
-                        <p>Idiomas</p>
+                        <p id="filtroidiomas">Idiomas</p>
                     </div>
                 </div> <!-- .info-usuario -->
 
                 <section id="sec-salvos">
-                    <p><ion-icon name="filter-circle-outline"></ion-icon>Salvos
+                    <p id="filtrosalvos"><ion-icon name="filter-circle-outline"></ion-icon>Salvos
                     </p>
 
                     <div class="navLatreal-itens item">
                         <div class="marcador">
                             <ion-icon name="bookmark-outline"></ion-icon>
                             <div>
-                                <h4 class="nome-marcador">Nome Marcador</h4>
+                                <h4 id="filtroendereco"  class="nome-marcador">Nome Marcador</h4>
                                 <p class="endereco">Al, Alameda Cel. Elizio Pereira, 1191 - Estradinha, Paranaguá - PR,
                                     83203-000</p>
                             </div>
@@ -122,7 +122,7 @@
                             </div>
                         </div> <!-- .info-motorista -->
                         <div class="info-adicional">
-                            <p class="arcondicionado">Ar-Condicionado</p>
+                            <p class="arcondicionado">Ar Condicionado</p>
                             <p class="disp-guia">Disponível para guia</p>
                         </div> <!-- .info-adicional -->
                         <a href="#">Mais Informações</a>
@@ -164,10 +164,10 @@
                     </div>
                 </div> <!-- .info-motorista -->
                 <div class="info-adicional">
-                    <p class="arcondicionado">Ar-Condicionado</p>
-                    <p class="disp-guia">Disponível para guia</p>
+                    <p id="filtrodoar" class="arcondicionado">Ar-Condicionado</p>
+                    <p id="disponivelguia"  class="disp-guia">Disponível para guia</p>
                 </div> <!-- .info-adicional -->
-                <a href="#">Mais Informações</a>
+                <a id="informacao" href="#">Mais Informações</a>
             </div> <!-- .mostrar-motorista -->
             <section id="navInferior-enderecos"></section>
         </section>

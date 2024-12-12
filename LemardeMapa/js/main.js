@@ -136,7 +136,7 @@ console.log(historicoPesquisa);
                                     </div>
                                 </div> <!-- .info-motorista -->
                                 ${infoAdicional}
-                                <a href="#">Mais Informações</a>
+                                <a class="mais-info-motorista" href="#">Mais Informações</a>
                             </div> <!-- .mostrar-motorista -->`;
                       
         return html
@@ -248,6 +248,15 @@ const translations = {
     filtromercado: "mercado",
     filtroturismo: "turismo",
     filtrofarmacia: "farmacia",
+    filtroidiomas: "Idiomas",
+    filtrosalvos: "Salvos",
+    filtroendereco: "Nome Marcador",
+    loginusuario: "Conecte-se",
+    filtrodoar: "Ar-Condocionado",
+    disponivelguia: "Disponível para guia",
+    informacao: "Mais Informações",
+    maisinfomotorista: "Mais Informações",
+
 
   },
 
@@ -257,6 +266,14 @@ const translations = {
     filtromercado: "market",
     filtroturismo: "tourism",
     filtrofarmacia: "pharmacy",
+    filtroidiomas: "Languages",
+    filtrosalvos: "saved",
+    filtroendereco: "Name Marker",
+    loginusuario: "Login",
+    filtrodoar: "Air conditioning",
+    disponivelguia: "Available for guide",
+    informacao: "More Information",
+    maisinfomotorista: "More Information",
 
   },
 
@@ -266,6 +283,15 @@ const translations = {
     filtromercado: "mercado",
     filtroturismo: "turismo",
     filtrofarmacia: "farmacia",
+    filtroidiomas: "Idiomas",
+    filtrosalvos: "salvado",
+    filtroendereco: "Marcador de nombre",
+    loginusuario: "conectar-se",
+    filtrodoar: "Aire acondicionado",
+    disponivelguia: "Disponible para guía",
+    informacao: "Más información",
+    maisinfomotorista: "Más información",
+    
 
   },
 
@@ -275,6 +301,14 @@ const translations = {
     filtromercado: "rynek",
     filtroturismo: "turystyka",
     filtrofarmacia: "Apteka",
+    filtroidiomas: "Języki",
+    filtrosalvos: "zapisane",
+    filtroendereco: "Znacznik nazwy",
+    loginusuario: "Połącz-se",
+    filtrodoar: "Klimatyzacja",
+    disponivelguia: "Dostępne dla przewodnika",
+    informacao: "Więcej informacji",
+    maisinfomotorista: "Więcej informacji",
 
   },
 
@@ -284,6 +318,14 @@ const translations = {
     filtromercado: "mercato",
     filtroturismo: "turismo",
     filtrofarmacia: "farmacia",
+    filtroidiomas: "Lingue",
+    filtrosalvos: "Salvato",
+    filtroendereco: "Marcatore del nome",
+    loginusuario: "Connettiti",
+    filtrodoar: "Aria condizionata",
+    disponivelguia: "Disponibile per guida",
+    informacao: "Ulteriori informazioni",
+    maisinfomotorista: "Ulteriori informazioni",
 
   },
 };
@@ -296,6 +338,16 @@ const filtrocafe = document.getElementById("filtrocafe");
 const filtromercado = document.getElementById("filtromercado");
 const filtroturismo = document.getElementById("filtroturismo");
 const filtrofarmacia = document.getElementById("filtrofarmacia");
+const filtroidiomas = document.getElementById("filtroidiomas");
+const filtrosalvos = document.getElementById("filtrosalvos");
+const filtroendereco = document.getElementById("filtroendereco");
+const loginusuario = document.getElementById("loginusuario");
+const filtrodoar = document.getElementById("filtrodoar");
+const disponivelguia = document.getElementById("disponivelguia");
+const informacao = document.getElementById("informacao");
+const maisinfomotorista = document.querySelector(".mais-info-motorista");
+console.log(maisinfomotorista)
+//
 // Área Traduzida
 
 function changeLanguage(language) {
@@ -307,6 +359,14 @@ function changeLanguage(language) {
     filtromercado.textContent = texts.filtromercado;
     filtroturismo.textContent = texts.filtroturismo;
     filtrofarmacia.textContent = texts.filtrofarmacia;
+    filtroidiomas.textContent = texts.filtroidiomas;
+    filtrosalvos.textContent = texts.filtrosalvos;
+    filtroendereco.textContent = texts.filtroendereco;
+    loginusuario.textContent = texts.loginusuario;
+    filtrodoar.textContent = texts.filtrodoar;   
+    disponivelguia.textContent = texts.disponivelguia;  
+    informacao.textContent = texts.informacao;                                          // adicionado texto para o botão mostrar motoristas
+    maisinfomotorista.textContent = texts.maisinfomotorista;                                          // adicionado texto para o botão mostrar motoristas
   }
 }
 
